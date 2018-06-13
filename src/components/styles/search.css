@@ -1,0 +1,51 @@
+.CardList {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.CardList .ant-card {
+    width: 200px;
+    /* display: inline-block; */
+    margin: 1rem auto;
+    position: relative;
+}
+
+.CardList .ant-card-body {
+    height: 300px;
+    overflow: hidden;
+}
+
+.CardList .ant-card-actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.author {
+    color: #b9b9b9;
+    font-size: 9px;
+    border-bottom: 1px solid;
+}
+
+.searchInput {
+    margin: 2rem auto;
+    width: 60%;
+}
+
+.anime-FadeIn {
+    transition: .3s all ease-in-out;
+    animation: FadeIn .3s;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
